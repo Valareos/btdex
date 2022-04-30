@@ -19,40 +19,41 @@ public abstract class Market {
 	// Unified crypto asset ID https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?CMC_PRO_API_KEY=UNIFIED-CRYPTOASSET-INDEX&listing_status=active
 	public static int UCA_ID_BURST = 573;
 
-	public static long MARKET_BTC            = 0x000000001;
-	public static long MARKET_LTC            = 0x000000002;
-	public static long MARKET_ETH            = 0x000000003;
-	public static long MARKET_XMR            = 0x000000004;
-	public static long MARKET_DOGE           = 0x000000005;
-	public static long MARKET_ARRR           = 0x000000006;
-	public static long MARKET_XLA            = 0x000000007;
-	public static long MARKET_BCH            = 0x000000008;
-	public static long MARKET_BSV            = 0x000000009;
-	public static long MARKET_BNB            = 0x000000010;
+	//public static long MARKET_BTC            = 0x000000001;
+	//public static long MARKET_LTC            = 0x000000002;
+	//public static long MARKET_ETH            = 0x000000003;
+	//public static long MARKET_XMR            = 0x000000004;
+	//public static long MARKET_DOGE           = 0x000000005;
+	//public static long MARKET_ARRR           = 0x000000006;
+	//public static long MARKET_XLA            = 0x000000007;
+	//public static long MARKET_BCH            = 0x000000008;
+	//public static long MARKET_BSV            = 0x000000009;
+	//public static long MARKET_BNB            = 0x000000010;
 
-	public static long MARKET_WSIGNA         = 0x000000011;
-	public static long MARKET_WBNB           = 0x000000012;
-	public static long MARKET_BUSDT          = 0x000000013;
+	//public static long MARKET_WSIGNA         = 0x000000011;
+	//public static long MARKET_WBNB           = 0x000000012;
+	//public static long MARKET_BUSDT          = 0x000000013;
+
+	//public static long MARKET_XCH            = 0x000000060;
 	
-	public static long MARKET_HIVE    	     = 0x000000014;
-	public static long MARKET_SSIGNA         = 0x000000015;
-
-	public static long MARKET_XCH            = 0x000000060;
+	
+	public static long MARKET_HIVE    	     = 0x000000501;
+	public static long MARKET_SSIGNA         = 0x000000502;
 
 	// TODO: fill with other cryptos here
 
-	public static long MARKET_USD            = 0x000001000;
-	public static long MARKET_EUR            = 0x000002000;
-	public static long MARKET_BRL            = 0x000003000;
+//	public static long MARKET_USD            = 0x000001000;
+//	public static long MARKET_EUR            = 0x000002000;
+//	public static long MARKET_BRL            = 0x000003000;
 	// TODO: fill with other fiat currencies here
 
 	public static long MARKET_MASK           = 0x0000fffff;
 
-	public static long TRANSFER_SAME_BANK    = 0x000100000;
-	public static long TRANSFER_NATIONAL_BANK= 0x000200000;
-	public static long TRANSFER_SEPA         = 0x000300000;
-	public static long TRANSFER_SEPA_INST    = 0x000400000;
-	public static long TRANSFER_ZELLE        = 0x000500000;
+//	public static long TRANSFER_SAME_BANK    = 0x000100000;
+//	public static long TRANSFER_NATIONAL_BANK= 0x000200000;
+//	public static long TRANSFER_SEPA         = 0x000300000;
+//	public static long TRANSFER_SEPA_INST    = 0x000400000;
+//	public static long TRANSFER_ZELLE        = 0x000500000;
 	// TODO: fill with other FIAT transfer methods
 	public static long TRANSFER_MASK         = 0x00ff00000;
 
