@@ -2,11 +2,11 @@
 !include "MUI2.nsh"
 
 ;Basic configuration
-Name "BTDEX"
-OutFile "btdex-installer-win_x64.exe"
+Name "ALTDEX"
+OutFile "altdex-installer-win_x64.exe"
 Unicode True
 ;Default installation folder
-InstallDir "$PROGRAMFILES64\btdex"
+InstallDir "$PROGRAMFILES64\altdex"
 ;RequestExecutionLevel none
 !define MUI_ABORTWARNING
 
@@ -16,14 +16,14 @@ InstallDir "$PROGRAMFILES64\btdex"
 
 
 !define MUI_FINISHPAGE_RUN
-!define MUI_FINISHPAGE_RUN_TEXT "Launch BTDEX"
+!define MUI_FINISHPAGE_RUN_TEXT "Launch ALTDEX"
 !define MUI_FINISHPAGE_RUN_FUNCTION "LaunchApplication"
 !insertmacro MUI_PAGE_FINISH
 
 !define MUI_FINISHPAGE_RUN_FUNCTION "LaunchApplication"
 
 Function LaunchApplication
-	Exec '"$WINDIR\explorer.exe" "$INSTDIR\btdex.exe"'
+	Exec '"$WINDIR\explorer.exe" "$INSTDIR\altdex.exe"'
 ;	ExecShell "" "$INSTDIR\btdex.exe"
 FunctionEnd
 
@@ -39,15 +39,15 @@ Section "" SecExample
 
   WriteUninstaller $INSTDIR\uninstall.exe
   
-  CreateDirectory '$SMPROGRAMS\BTDEX\'
-  CreateShortCut '$SMPROGRAMS\BTDEX\btdex.lnk' '$INSTDIR\btdex.exe' "" '$INSTDIR\btdex.exe' 0
+  CreateDirectory '$SMPROGRAMS\ALTDEX\'
+  CreateShortCut '$SMPROGRAMS\ALTTDEX\altdex.lnk' '$INSTDIR\altdex.exe' "" '$INSTDIR\altdex.exe' 0
 SectionEnd
 
 ; The uninstall section
 Section "Uninstall"
 
 Delete $INSTDIR\uninstall.exe
-Delete $INSTDIR\btdex.exe
+Delete $INSTDIR\altdex.exe
 RMDir /R $INSTDIR\jre
 ;RMDir /R $INSTDIR
 
