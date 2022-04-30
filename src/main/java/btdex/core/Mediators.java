@@ -15,7 +15,7 @@ public class Mediators {
 
     private static Logger logger = LogManager.getLogger();
 
-    private static final SignumValue MIN_TRT = SignumValue.fromNQT(10_000L * 1_000_000L);
+    private static final SignumValue MIN_TRT = SignumValue.fromNQT(10_000L * 1_000L);
 
     public Mediators(Boolean testnet) {
         String[] mediators = (testnet) ? Constants.MEDIATORS_TESTNET : Constants.MEDIATORS;
