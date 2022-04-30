@@ -63,7 +63,7 @@ public class Constants {
 
     public static final String DEF_CONF_FILE = "config.properties";
 
-    public static final String[] MEDIATORS = {"93N4-8RFU-KSWJ-3GYXA", "TLYF-7EBX-FBLY-DFX86", "K9DB-72JS-2PLL-9U9JF", "T7MP-XCSN-RAPA-6VFBC"};
+    public static final String[] MEDIATORS = {"BTFG-BCE6-9927-D4GPE", "PZZA-DRQP-WEEE-3QH2T", "MPMZ-8CD9-HZMD-A7R2X", "PTRT-R7DZ-3XUW-EFJDW"};
     
     public static final String[] MEDIATORS_TESTNET = {"6ET8-WUKM-3HS8-CN4KM", "D3S9-8L56-UMLL-6EDFX", "E9UA-FX37-CHPE-568RD"};
 
