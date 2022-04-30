@@ -87,9 +87,9 @@ configurations.all {
 }
 
 // Define the main class for the application
-mainClassName = 'BTDEX'
+mainClassName = 'ALTDEX'
 
-description = 'A decentralized exchange system running on the Signum blockchain.'
+description = 'A decentralized exchange system running on the Signum blockchain using Alterantive cross-chains.'
 
 def details = versionDetails()
 
@@ -125,7 +125,7 @@ task unzipWindowsJDK(type: Copy, dependsOn: downloadWindowsJDK) {
 }
 
 createExe {
-    outfile = 'btdex.exe'
+    outfile = 'altdex.exe'
     icon = "${projectDir}/dist/btdex.ico"
     jreMinVersion = '1.8.0'
     copyright = 'BTDEX'
