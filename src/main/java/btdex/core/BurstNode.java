@@ -8,7 +8,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicReference;
 
-import btdex.markets.MarketTRT;
+import btdex.markets.MarketPTRT;
 import signumj.entity.SignumAddress;
 import signumj.entity.SignumID;
 import signumj.entity.SignumValue;
@@ -69,7 +69,7 @@ public class BurstNode {
 
 	private static Logger logger = LogManager.getLogger();
 
-	private static Market TRT = new MarketTRT();
+	private static Market PTRT = new MarketPTRT();
 
 	static BurstNode INSTANCE;
 
@@ -239,7 +239,7 @@ public class BurstNode {
 									balance = b;
 								}
 
-								if(m.getTokenID().equals(TRT.getTokenID())) {
+								if(m.getTokenID().equals(PTRT.getTokenID())) {
 									for (int i = 0; i < mediators.getMediators().length; i++) {
 										SignumID mediator = mediators.getMediators()[i];
 										if(b.getAccountAddress().getSignumID().equals(mediator)) {
